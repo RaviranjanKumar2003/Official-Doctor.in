@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            border: border-box;
+        }
+        .main{
+            background-image: url("images/p2.avif");
+            background-size: cover;
+            height: 750px;
+        }
+        .row1{
+             height: 42px;
+             color:white;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             background-color:#222f3d;
+        }
+        .r1-c1{
+            display: flex;
+            align-items: center;
+            padding-left: -50px;
+        }
+        .r1-list1{
+            list-style-type: none;
+            background-color: #222f3d;
+            color: white;
+        }
+        .ul1-li{
+            display: inline-block;
+            padding: 10px;
+        }
+        .ul1-button{
+            display: inline-block;
+            padding-left: 550px;
+        }
+        .r1-button{
+            background-color: rgb(210, 221, 10);
+            color:black;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .r1-button:hover{
+            background-color:darkorange;
+        }
+        .ul1-li:hover{
+            background-color: green;
+            color: black;
+            cursor: pointer;
+        }
+        .dropdown{
+            background-color:#222f3d;
+            color: white;
+            display:none;
+        }
+        .ul1-li:hover .dropdown{
+            display: block;
+            position: absolute;
+            margin-left: -10px;
+            margin-top: 10px;    
+        }
+        .dropdown .drop-ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown .drop-ul-li{
+            display: block;
+            padding: 10px;
+        }
+        .dropdown2{
+            display:none;
+            background-color:#222f3d;
+            color: white;
+        }
+
+        .dropdown .drop-ul-li:hover .dropdown2{
+            display: block;
+            position: absolute;
+            margin-left: 120px;
+            margin-top: -29px;    
+        }
+        .dropdown2 .drop2-ul{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown2 .drop2-ul-li{
+            display: block;
+            padding: 10px;
+            width: 200px;
+        }
+        .dropdown .drop-ul .drop-ul-li:hover{
+              background-color: green;
+        }
+        .dropdown2 .drop2-ul .drop2-ul-li:hover{
+              background-color: green;
+        }
+        .p1{
+            margin-left: 5px;
+        }
+        .r2-c1{
+            float: right;
+        }
+        .r2-img1{
+            height: 757px;
+            margin-top: -175px;
+        }
+        .r2-hed1{
+            margin-left: 140px;
+            color: rgb(3, 3, 62);
+            font-weight: bold;
+            font-size: 80px;
+            margin-top: 150px;
+        }
+        .r2-hed2{
+            margin-left: 140px;
+            color: rgb(22, 22, 248);
+            font-weight: bold;
+            font-size: 80px;
+            margin-top: -50px;
+        }
+        .r2-papa1{
+            margin-left: 140px;
+            font-size: 20px;
+            margin-top: -25px;
+        }
+        .r2-c3-button{
+            margin-left: 130px;
+            margin-top: 30px;
+            background-color: rgb(210, 221, 10);
+            color:black;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            width: 150px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .r2-c3-button:hover{
+            background-color:darkorange;
+        }
+    </style>
+</head>
+<body>
+    <header class="main">
+        <div class="row1">
+            <div class="r1-c1">
+                <i class="fa-solid fa-user-doctor"></i>
+                <p class="p1">Nursing</p>
+            </div>
+            <div class="r1-c2">
+                <ul class="r1-list1">
+                    <li class="ul1-li">Home</li>
+                    <li class="ul1-li">Find Doctor's
+                        <div class="dropdown">
+                            <ul class="drop-ul">
+                                <li class="drop-ul-li">Dr Rakesh Mahajan</li>
+                                <li class="drop-ul-li">Dr Rakesh Mahajan</li>
+                                <li class="drop-ul-li">Dr Ajay Kaul</li>
+                                <li class="drop-ul-li">Dr Arun Saroha</li>
+                                <li class="drop-ul-li">Dr. Ak Kriplani</li>
+                                <li class="drop-ul-li">Dr Sanjay Gogio</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ul1-li">Hospitals
+                        <div class="dropdown">
+                            <ul class="drop-ul">
+                                <li class="drop-ul-li">AIIMS Patna
+                                    <div class="dropdown2">
+                                        <ul class="drop2-ul">
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Umesh Kumar Bhardani</li>
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Shashi Kant</li>
+                                            <li class="drop2-ul-li">Dr. Nishant Sahay</li>
+                                            <li class="drop2-ul-li">Dr. Abhyuday Kumar</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-ul-li">PMCH Patna
+                                    <div class="dropdown2">
+                                        <ul class="drop2-ul">
+                                            <li class="drop2-ul-li">Dr. Vidya Pati Choudhary</li>
+                                            <li class="drop2-ul-li"> Dr. Khurshid Alam</li>
+                                            <li class="drop2-ul-li">Dr. Arun Prasad Singh</li>
+                                            <li class="drop2-ul-li">Dr. Birendra Kumar Sinha</li>
+                                            <li class="drop2-ul-li">Dr. Amrendra Roy Choudhary</li>
+                                            <li class="drop2-ul-li">Dr. Rekha Sinha</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-ul-li">IGIMS Patna
+                                    <div class="dropdown2">
+                                        <ul class="drop2-ul">
+                                            <li class="drop2-ul-li">Prof. (Dr.) Bindey Kumar</li>
+                                            <li class="drop2-ul-li">Dr. Umesh Kumar Bhardani</li>
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Shashi Kant</li>
+                                            <li class="drop2-ul-li">Dr. Nishant Sahay</li>
+                                            <li class="drop2-ul-li">Dr. Abhyuday Kumar</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-ul-li">PARAS HMRI Hospital
+                                    <div class="dropdown2">
+                                        <ul class="drop2-ul">
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Umesh Kumar Bhardani</li>
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Shashi Kant</li>
+                                            <li class="drop2-ul-li">Dr. Nishant Sahay</li>
+                                            <li class="drop2-ul-li">Dr. Abhyuday Kumar</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-ul-li">Savera Cancer and Multi Specialty Hospital
+                                    <div class="dropdown2">
+                                        <ul class="drop2-ul">
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Umesh Kumar Bhardani</li>
+                                            <li class="drop2-ul-li">Dr. Kunal Singh</li>
+                                            <li class="drop2-ul-li">Dr. Shashi Kant</li>
+                                            <li class="drop2-ul-li">Dr. Nishant Sahay</li>
+                                            <li class="drop2-ul-li">Dr. Abhyuday Kumar</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="ul1-li">Surgeries</li>
+                        <li class="ul1-button"><button type="submit" class="r1-button">Contact Us</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="r2-c1">
+                     <img src="/images/Doctor1.png" class="r2-img1">
+                </div>
+                <div class="r2-c2">
+                    <h1 class="r2-hed1">Doctor</h1>
+                    <h1 class="r2-hed2">Consultations.</h1>
+                    <p class="r2-papa1">Contact instantly with a 24*7 specialist or choose to video visit a particular doctor. </p>
+                </div>
+                <div class="r2-c3">
+                    <button type="submit" class="r2-c3-button">Contact Now</button>
+                </div>
+            </div>
+        </header>
+</body>
+</html>
+
+                                
